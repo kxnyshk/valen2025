@@ -9,17 +9,17 @@ const index = () => {
   return answer === 0 ? (
     <div className="h-full w-full flex justify-center items-center flex-col bg-red-100">
       <div>
-        <img src={Mochi} className="w-80 h-80" />
+        <img src={Mochi} className="w-40 h-40" />
       </div>
 
       <div className="flex flex-col mt-8">
-        <div className="text-4xl font-semibold text-red-600 flex justify-center">
+        <div className="text-base font-semibold text-red-600 flex justify-center">
           Are you Veduuu the gabbuuu chabbuuu?
         </div>
         <div className="flex flex-row mt-8 flex-wrap justify-center gap-4">
           <div>
             <button
-              className={`text-white bg-green-500 text-xl focus:outline-none focus:ring-0 border-none`}
+              className={`text-white bg-green-500 text-base focus:outline-none focus:ring-0 border-none`}
               onClick={() => setAnswer(1)}
             >
               Yes
@@ -27,7 +27,7 @@ const index = () => {
           </div>
           <div className="flex items-end">
             <button
-              className="text-white bg-red-500 text-xl focus:outline-none focus:ring-0 border-none"
+              className="text-white bg-red-500 text-base focus:outline-none focus:ring-0 border-none"
               onClick={() => setAnswer(-1)}
             >
               No
